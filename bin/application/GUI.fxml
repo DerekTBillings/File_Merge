@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="homeLoc" prefHeight="281.9609375" prefWidth="463.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.GuiFunctions">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label layoutX="84.0" layoutY="14.0" prefHeight="34.0" prefWidth="296.0" text="CDRS ABE Interface Utility" textAlignment="CENTER">
+      <font>
+        <Font size="25.0" />
+      </font>
+    </Label>
+    <Label layoutX="42.0" layoutY="62.0" text="Import Location:" />
+    <TextField id="ImportLocation" fx:id="importLocation" disable="true" editable="true" layoutX="140.0" layoutY="59.0" opacity="0.5" prefWidth="200.0" />
+    <Button id="importBrowse" fx:id="iBrowse" layoutX="363.0" layoutY="60.0" mnemonicParsing="false" text="Import" />
+    <RadioButton id="rd1" fx:id="DataElements" layoutX="27.0" layoutY="139.0" mnemonicParsing="false" text="Data Elements Import" />
+    <RadioButton id="rd2" fx:id="ColumnsImport" layoutX="27.0" layoutY="178.0" mnemonicParsing="false" text="DIV-03 Columns Import" />
+    <RadioButton id="rd3" fx:id="InformationExchanges" layoutX="185.0" layoutY="139.0" mnemonicParsing="false" text="Information Exchanges" />
+    <RadioButton id="rd4" fx:id="InterfaceControl" layoutX="184.0" layoutY="178.0" mnemonicParsing="false" text="Interface Control Document" />
+    <RadioButton id="rd5" fx:id="SystemInterfaces" layoutX="337.0" layoutY="139.0" mnemonicParsing="false" text="System Interfaces" />
+    <Button id="exportBrowse" fx:id="generate" layoutX="195.0" layoutY="217.0" mnemonicParsing="false" prefWidth="74.0" text="Generate" />
+    <Label id="errorNotice" fx:id="alertNotice" layoutX="14.0" layoutY="248.0" prefWidth="435.0" text="" textAlignment="LEFT" textFill="#ff3333">
+      <font>
+        <Font name="System Bold" size="15.0" />
+      </font>
+    </Label>
+    <Label fx:id="AbeLabel" disable="false" layoutX="42.0" layoutY="103.0" opacity="0.5" text="ABE GUI-ID:" />
+    <TextField id="ImportLocation" fx:id="abeTextField" disable="true" editable="true" layoutX="140.0" opacity="0.5" prefWidth="200.0" AnchorPane.topAnchor="100.0" />
+    <Button id="importBrowse" fx:id="ImportAbe" disable="true" layoutX="363.0" layoutY="100.0" mnemonicParsing="false" text="Import" />
+  </children>
+</AnchorPane>
